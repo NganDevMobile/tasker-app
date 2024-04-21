@@ -1,10 +1,11 @@
-import create, { StoreApi } from 'zustand';
-import LocalStorage from '@local-storage';
+import { StoreApi, create } from 'zustand';
+import LocalStorage from '../local-storage';
 import createAppSlice, { AppSlice } from '@services/zustand/app/AppSlice';
 import createUserSlice, { UserSlice } from '@services/zustand/user/UserSlice';
 import { createJSONStorage, persist, StateStorage } from 'zustand/middleware';
+import createPhotoSlice, { PhotoSlice } from './photos/PhotoSlice';
 
-export type StoreState = AppSlice & UserSlice;
+export type StoreState = AppSlice & UserSlice & PhotoSlice;
 export type StoreSlice<T> = (
   set: StoreApi<StoreState>['setState'],
   get: StoreApi<StoreState>['getState'],
@@ -28,6 +29,7 @@ const useStore = create<StoreState>()(
     (set, get) => ({
       ...createAppSlice(set, get),
       ...createUserSlice(set, get),
+      ...createPhotoSlice(set, get),
     }),
     {
       name: 'store',

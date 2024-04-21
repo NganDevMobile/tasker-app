@@ -7,8 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RouterNames } from '@common';
 import { SignIn, SignUp } from 'screens/authenticate';
 import HomeScreen from 'screens/home';
-
-
+import TaskScreen from 'screens/tasks';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +18,7 @@ function App() {
         <Stack.Screen name={RouterNames.HOME_SCREEN} component={HomeScreen} />
         <Stack.Screen name={RouterNames.SIGN_IN} component={SignIn} />
         <Stack.Screen name={RouterNames.SIGN_UP} component={SignUp} />
+        <Stack.Screen name={RouterNames.TASK_SCREEN} component={TaskScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

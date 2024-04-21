@@ -1,8 +1,8 @@
 export default {
-    // noAuthenticate
-    HOME_SCREEN: 'HOME_SCREEN',
-    SIGN_IN: 'SIGN_IN',
-    SIGN_UP: 'SIGN_UP',
-
-    // authenticate
-}
+  // noAuthenticate
+  HOME_SCREEN: 'Home Screen',
+  SIGN_IN: 'Sign In Screen',
+  SIGN_UP: 'Sign Up Screen',
+  TASK_SCREEN: 'Task Screen',
+  // authenticate
+};
