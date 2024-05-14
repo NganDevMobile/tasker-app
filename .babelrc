@@ -1,4 +1,5 @@
 {
+  "presets": ["module:metro-react-native-babel-preset"],
   "plugins": [
     [
       "module-resolver",
@@ -28,9 +29,12 @@
           { "@services": "./src/services" },
           { "@utils": "./src/utils" },             
           { "@zustand": "./src/services/zustand/store" },
-          { "@config": "./src/utils/config" }
+          { "@config": "./src/utils/config" },
+          { "@theme": "./src/utils/theme" }
         ]
       }
-    ]
+      ],
+       "@babel/plugin-syntax-jsx"
   ]
+  
 }

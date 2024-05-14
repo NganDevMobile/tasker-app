@@ -1,8 +1,14 @@
 export default {
   // noAuthenticate
-  HOME_SCREEN: 'Home Screen',
-  SIGN_IN: 'Sign In Screen',
-  SIGN_UP: 'Sign Up Screen',
-  TASK_SCREEN: 'Task Screen',
+  HOME_SCREEN: 'HOME_SCREEN',
+  INDEX_SCREEN: 'INDEX_SCREEN',
+  CALENDAR_SCREEN: 'CALENDAR_SCREEN',
+  SIGN_IN: 'SIGN_IN',
+  SIGN_UP: 'SIGN_UP',
+  TASK_SCREEN: 'TASK_SCREEN',
+  SPLASH_SCREEN: 'SPLASH_SCREEN',
+  BOTTOM_TAB_BAR: 'BOTTOM_TAB_BAR',
+  ADD_SCREEN: 'ADD_SCREEN',
+
   // authenticate
 };

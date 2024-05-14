@@ -1,12 +1,10 @@
 import { Dimensions, Platform } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
-// import { getStatusBarHeight } from 'utils/mixins';
 
 const { width, height } = Dimensions.get('window');
 
 const adjustSize = (size: number) => moderateScale(size);
 
-// Used via Metrics.baseMargin
 export const metrics = {
   smallMargin: 5,
   baseMargin: 12,
@@ -36,8 +34,6 @@ export const metrics = {
     large: 60,
     logo: 200,
   },
-//   statusBarHeight: getStatusBarHeight(true),
-//   heightStatusBar: getStatusBarHeight(true),
   size2: adjustSize(2),
   size3: adjustSize(3),
   size4: adjustSize(4),
